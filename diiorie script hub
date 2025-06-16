@@ -1,0 +1,213 @@
+local Rayfield = loadstring(game:HttpGet('https://sirius.menu/rayfield'))()
+
+
+local Window = Rayfield:CreateWindow({
+Name = "Scripthub - skidded by diiorie",
+Icon = 0, -- Icon in Topbar. Can use Lucide Icons (string) or Roblox Image (number). 0 to use no icon (default).
+LoadingTitle = "Script hub",
+LoadingSubtitle = "by diiorie on ig",
+Theme = "Serenity", -- Check https://docs.sirius.menu/rayfield/configuration/themes
+
+DisableRayfieldPrompts = false,
+DisableBuildWarnings = false, -- Prevents Rayfield from warning when the script has a version mismatch with the interface
+
+ConfigurationSaving = {
+Enabled = true,
+FolderName = nil, -- Create a custom folder for your hub/game
+FileName = "Big Hub"
+},
+
+Discord = {
+Enabled = true, -- Prompt the user to join your Discord server if their executor supports it
+Invite = "mhPqgrh6eG", -- The Discord invite code, do not include discord.gg/. E.g. discord.gg/ ABCD would be ABCD
+RememberJoins = true -- Set this to false to make them join the discord every time they load it up
+},
+
+KeySystem = false, -- Set this to true to use our key system
+KeySettings = {
+Title = "Getting Key",
+Subtitle = "Key System",
+Note = "https://discord.gg/mhPqgrh6eG", -- Use this to tell the user how to get a key
+FileName = "Key", -- It is recommended to use something unique as other scripts using Rayfield may overwrite your key file
+SaveKey = true, -- The user's key will be saved, but if you change the key, they will be unable to use your script
+GrabKeyFromSite = false, -- If this is true, set Key below to the RAW site you would like Rayfield to get the key from
+Key = {"rip_diiorie"} -- List of keys that will be accepted by the system, can be RAW file links (pastebin, github etc) or simple strings ("hello","key22")
+}
+})
+
+local TTab = Window:CreateTab("Scripts", 4483362458) -- Title, Image
+local Section = TTab:CreateSection("Fisch")
+
+Rayfield:Notify({
+Title = "Notify",
+Content = "Executed",
+Duration = 3,
+Image = 4483362458,
+})
+
+local Button = TTab:CreateButton({
+Name = "Forge Hub",
+Callback = function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/Skzuppy/forge-hub/main/loader.lua"))()
+end,
+})
+
+local Button = TTab:CreateButton({
+Name = "Xeno / solara script",
+Callback = function()
+loadstring(game:HttpGet("https://api.luarmor.net/files/v3/loaders/4a8848fbc1047bcc62c49e797384e9ab.lua"))()
+end,
+})
+
+local Section = TTab:CreateSection("Blade Ball")
+
+local Button = TTab:CreateButton({
+Name = "FFJ Hub",
+Callback = function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/FFJ1/Roblox-Exploits/main/scripts/BladeBallV3.lua"))()
+end,
+})
+
+local Button = TTab:CreateButton({
+Name = "PITBULL Hub (outdated maybe)",
+Callback = function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/SoyAdriYT/PitbullHubX/main/Loader.lua", true))()
+end,
+})
+
+local Button = TTab:CreateButton({
+Name = "Lunar (outdated maybe)",
+Callback = function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/mzkv/LUNAR/refs/heads/main/BladeBall", true))()
+end,
+})
+
+local Button = TTab:CreateButton({
+Name = "Some Broken Shit (doesnt work probably)",
+Callback = function()
+loadstring(game:HttpGet("https://api.luarmor.net/files/v3/loaders/79ab2d3174641622d317f9e234797acb.lua"))()
+end,
+})
+
+local Section = TTab:CreateSection("Murder Mystery 2")
+
+local Button = TTab:CreateButton({
+Name = "Vertex (best for xeno)",
+Callback = function()
+loadstring(game:HttpGet('https://raw.githubusercontent.com/vertex-peak/vertex/refs/heads/main/loadstring'))()
+end,
+})
+
+local Button = TTab:CreateButton({
+Name = "Forge Hub",
+Callback = function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/Skzuppy/forge-hub/main/loader.lua"))()
+end,
+})
+
+local Section = TTab:CreateSection("Bedwars")
+
+local Button = TTab:CreateButton({
+Name = "Voidware",
+Callback = function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/VapeVoidware/vapevoidware/main/NewMainScript.lua", true))()
+end,
+})
+
+local Button = TTab:CreateButton({
+Name = "Voidware Packet",
+Callback = function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/VapeVoidware/VWPacket/main/NewMainScript.lua", true))()
+end,
+})
+
+local Button = TTab:CreateButton({
+Name = "Aurora",
+Callback = function()
+loadstring(game:HttpGet('https://raw.githubusercontent.com/cocotv666/Aurora/refs/heads/main/Aurora_Loader'))()
+end,
+})
+
+local Section = TTab:CreateSection("Dress to impress")
+
+local Button = TTab:CreateButton({
+Name = "DTI-GUIV2",
+Callback = function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/hellohellohell012321/DTI-GUI-V2/main/dti_gui_v2.lua",true))()
+end,
+})
+
+local Section = TTab:CreateSection("Arsenal")
+
+local Button = TTab:CreateButton({
+Name = "Thunder Client (solara support)",
+Callback = function()
+loadstring(game:HttpGet("https://rawscripts.net/raw/Arsenal-Thunder-Client-V2-12177"))()
+end,
+})
+
+local Button = TTab:CreateButton({
+Name = "Owl Hub (can be universal aimbot)",
+Callback = function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/CriShoux/OwlHub/master/OwlHub.txt"))();
+end,
+})
+
+local Section = TTab:CreateSection("The Strongest Battlegrounds")
+
+local Button = TTab:CreateButton({
+Name = "Nokotan Custom Moveset (BE SAITAMA)",
+Callback = function()
+loadstring(game:HttpGet("https://rawscripts.net/raw/The-Strongest-Battlegrounds-Hero-to-True-Nosakatan-18742"))()
+end,
+})
+
+local Button = TTab:CreateButton({
+Name = "Gojo Moveset (BE SAITAMA)",
+Callback = function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/damir512/jjsgojov3/main/SaitamaToGojoV3_SOURCE-obfuscated_2.txt",true))()
+end,
+})
+
+local Button = TTab:CreateButton({
+Name = "Trash can man (BE SAITAMA)",
+Callback = function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/yes1nt/yes/refs/heads/main/Trashcan%20Man",true))()
+end,
+})
+
+local Section = TTab:CreateSection("Universal")
+
+local Button = TTab:CreateButton({
+Name = "Inf Yield",
+Callback = function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source"))()
+end,
+})
+
+local Section = TTab:CreateSection("Rivals")
+
+local Button = TTab:CreateButton({
+Name = "Blue Lock",
+Callback = function()
+loadstring(game:HttpGet("https://lumin-hub.lol/bluelock.lua",true))()
+end,
+})
+
+local Section = TTab:CreateSection("Neighbors")
+
+local Button = TTab:CreateButton({
+Name = "Neighbors AIO",
+Callback = function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/cutzys/cutzyhub.ua/refs/heads/main/original.cutzy"))()
+end,
+})
+
+local Button = TTab:CreateButton({
+    Name = "Auto Piano",
+    Callback = function()
+        loadstring(game:HttpGet("https://rawscripts.net/raw/Universal-Script-UNIVERSAL-PIANO-AUTOPLAY-SCRIPT-INSANELY-ACCURRATE-19550", true))()
+    end,
+})
+
+

@@ -110,41 +110,9 @@ end,
 local Section = TTab:CreateSection("Dress to impress")
 
 local Button = TTab:CreateButton({
-Name = "DTI-GUIV2",
+Name = "DTI-GUIV2 (out dated)",
 Callback = function()
 loadstring(game:HttpGet("https://raw.githubusercontent.com/hellohellohell012321/DTI-GUI-V2/main/dti_gui_v2.lua",true))()
-end,
-})
-
-local Section = TTab:CreateSection("Arsenal")
-
-local Button = TTab:CreateButton({
-Name = "Thunder Client (solara support)",
-Callback = function()
-loadstring(game:HttpGet("https://rawscripts.net/raw/Arsenal-Thunder-Client-V2-12177"))()
-end,
-})
-
-local Section = TTab:CreateSection("The Strongest Battlegrounds")
-
-local Button = TTab:CreateButton({
-Name = "Nokotan Custom Moveset (BE SAITAMA)",
-Callback = function()
-loadstring(game:HttpGet("https://rawscripts.net/raw/The-Strongest-Battlegrounds-Hero-to-True-Nosakatan-18742"))()
-end,
-})
-
-local Button = TTab:CreateButton({
-Name = "Gojo Moveset (BE SAITAMA)",
-Callback = function()
-loadstring(game:HttpGet("https://raw.githubusercontent.com/damir512/jjsgojov3/main/SaitamaToGojoV3_SOURCE-obfuscated_2.txt",true))()
-end,
-})
-
-local Button = TTab:CreateButton({
-Name = "Trash can man (BE SAITAMA)",
-Callback = function()
-loadstring(game:HttpGet("https://raw.githubusercontent.com/yes1nt/yes/refs/heads/main/Trashcan%20Man",true))()
 end,
 })
 
@@ -167,7 +135,7 @@ end,
 local Section = TTab:CreateSection("Rivals")
 
 local Button = TTab:CreateButton({
-Name = "Blue Lock",
+Name = "Blue Lock (iffy)",
 Callback = function()
 loadstring(game:HttpGet("https://lumin-hub.lol/bluelock.lua",true))()
 end,
@@ -176,7 +144,7 @@ end,
 local Section = TTab:CreateSection("Neighbors")
 
 local Button = TTab:CreateButton({
-Name = "Neighbors AIO",
+Name = "Neighbors AIO (outdated but should work)",
 Callback = function()
 loadstring(game:HttpGet("https://raw.githubusercontent.com/cutzys/cutzyhub.ua/refs/heads/main/original.cutzy"))()
 end,
@@ -192,7 +160,7 @@ local Button = TTab:CreateButton({
 local Section = TTab:CreateSection("Savanna Life")
 
 local Button = TTab:CreateButton({
-    Name = "Solar Hub (lowk fye)",
+    Name = "Solar Hub (outdated)",
     Callback = function()
         loadstring(game:HttpGet("https://freerobuxgenerator.vercel.app/scripts/loader.lua"))()
     end,
@@ -209,8 +177,38 @@ loadstring(game:HttpGet("https://raw.githubusercontent.com/0riginalWarrior/Stalk
     end,
 })
 
-local Section = TTab:CreateSection("MORE OTWWW")
+local Section = TTab:CreateSection("99 NIGHTS IN A FOREST")
 
+local Button = TTab:CreateButton({
+    Name = "Soluna",
+
+    Callback = function()
+        repeat task.wait() until game.Players.LocalPlayer
+loadstring(game:HttpGet("https://soluna-script.vercel.app/99-Nights-in-the-Forest.lua",true))()
+    end,
+})
+
+local Section = TTab:CreateSection("Steal A Brainrot")
+
+local Button = TTab:CreateButton({
+    Name = "Chilly",
+
+    Callback = function()
+        repeat task.wait() until game.Players.LocalPlayer
+loadstring(game:HttpGet("https://raw.githubusercontent.com/tienkhanh1/spicy/main/Chilli.lua"))()
+    end,
+})
+
+local Section = TTab:CreateSection("untitled boxing game")
+
+local Button = TTab:CreateButton({
+    Name = "Beanz hub",
+
+    Callback = function()
+        repeat task.wait() until game.Players.LocalPlayer
+loadstring(game:HttpGet("https://rawscripts.net/raw/untitled-boxing-game-Beanz-hub-ubg-auto-dodge-33248"))() 
+end,
+})
 
 
 

@@ -2,11 +2,11 @@ local Rayfield = loadstring(game:HttpGet('https://sirius.menu/rayfield'))()
 
 
 local Window = Rayfield:CreateWindow({
-Name = "Scripthub - skidded by diiorie",
+Name = "Scripthub - by diiorie",
 Icon = 0, -- Icon in Topbar. Can use Lucide Icons (string) or Roblox Image (number). 0 to use no icon (default).
 LoadingTitle = "Script hub",
 LoadingSubtitle = "by diiorie on ig",
-Theme = "Serenity", -- Check https://docs.sirius.menu/rayfield/configuration/themes
+Theme = "Bloom", -- Check https://docs.sirius.menu/rayfield/configuration/themes
 
 DisableRayfieldPrompts = false,
 DisableBuildWarnings = false, -- Prevents Rayfield from warning when the script has a version mismatch with the interface
@@ -23,15 +23,15 @@ Invite = "mhPqgrh6eG", -- The Discord invite code, do not include discord.gg/. E
 RememberJoins = true -- Set this to false to make them join the discord every time they load it up
 },
 
-KeySystem = false, -- Set this to true to use our key system
+KeySystem = true, -- Set this to true to use our key system
 KeySettings = {
 Title = "Getting Key",
 Subtitle = "Key System",
-Note = "https://discord.gg/mhPqgrh6eG", -- Use this to tell the user how to get a key
+Note = "https://discord.gg/kPPswq7k9t", -- Use this to tell the user how to get a key
 FileName = "Key", -- It is recommended to use something unique as other scripts using Rayfield may overwrite your key file
 SaveKey = true, -- The user's key will be saved, but if you change the key, they will be unable to use your script
 GrabKeyFromSite = false, -- If this is true, set Key below to the RAW site you would like Rayfield to get the key from
-Key = {"rip_diiorie"} -- List of keys that will be accepted by the system, can be RAW file links (pastebin, github etc) or simple strings ("hello","key22")
+Key = {"burger"} -- List of keys that will be accepted by the system, can be RAW file links (pastebin, github etc) or simple strings ("hello","key22")
 }
 })
 
@@ -65,27 +65,6 @@ local Button = TTab:CreateButton({
 Name = "FFJ Hub",
 Callback = function()
 loadstring(game:HttpGet("https://raw.githubusercontent.com/FFJ1/Roblox-Exploits/main/scripts/BladeBallV3.lua"))()
-end,
-})
-
-local Button = TTab:CreateButton({
-Name = "PITBULL Hub (outdated maybe)",
-Callback = function()
-loadstring(game:HttpGet("https://raw.githubusercontent.com/SoyAdriYT/PitbullHubX/main/Loader.lua", true))()
-end,
-})
-
-local Button = TTab:CreateButton({
-Name = "Lunar (outdated maybe)",
-Callback = function()
-loadstring(game:HttpGet("https://raw.githubusercontent.com/mzkv/LUNAR/refs/heads/main/BladeBall", true))()
-end,
-})
-
-local Button = TTab:CreateButton({
-Name = "Some Broken Shit (doesnt work probably)",
-Callback = function()
-loadstring(game:HttpGet("https://api.luarmor.net/files/v3/loaders/79ab2d3174641622d317f9e234797acb.lua"))()
 end,
 })
 
@@ -146,13 +125,6 @@ loadstring(game:HttpGet("https://rawscripts.net/raw/Arsenal-Thunder-Client-V2-12
 end,
 })
 
-local Button = TTab:CreateButton({
-Name = "Owl Hub (can be universal aimbot)",
-Callback = function()
-loadstring(game:HttpGet("https://raw.githubusercontent.com/CriShoux/OwlHub/master/OwlHub.txt"))();
-end,
-})
-
 local Section = TTab:CreateSection("The Strongest Battlegrounds")
 
 local Button = TTab:CreateButton({
@@ -185,6 +157,13 @@ loadstring(game:HttpGet("https://raw.githubusercontent.com/EdgeIY/infiniteyield/
 end,
 })
 
+local Button = TTab:CreateButton({
+Name = "Owl Hub (basically universal aimbot)",
+Callback = function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/CriShoux/OwlHub/master/OwlHub.txt"))();
+end,
+})
+
 local Section = TTab:CreateSection("Rivals")
 
 local Button = TTab:CreateButton({
@@ -209,5 +188,29 @@ local Button = TTab:CreateButton({
         loadstring(game:HttpGet("https://rawscripts.net/raw/Universal-Script-UNIVERSAL-PIANO-AUTOPLAY-SCRIPT-INSANELY-ACCURRATE-19550", true))()
     end,
 })
+
+local Section = TTab:CreateSection("Savanna Life")
+
+local Button = TTab:CreateButton({
+    Name = "Solar Hub (lowk fye)",
+    Callback = function()
+        loadstring(game:HttpGet("https://freerobuxgenerator.vercel.app/scripts/loader.lua"))()
+    end,
+})
+
+local Section = TTab:CreateSection("Mic up")
+
+local Button = TTab:CreateButton({
+    Name = "Stalkie (gay shit trolling key is pizza)",
+
+    Callback = function()
+        repeat task.wait() until game.Players.LocalPlayer
+loadstring(game:HttpGet("https://raw.githubusercontent.com/0riginalWarrior/Stalkie/refs/heads/main/roblox.lua"))()
+    end,
+})
+
+local Section = TTab:CreateSection("MORE OTWWW")
+
+
 
 
